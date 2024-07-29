@@ -69,3 +69,11 @@ DROP TABLE test;
   INSERT INTO test (name, age) VALUES('Ben', 19), ('Simon', 28), ('Claire', 23);
 
 SELECT \* FROM test;
+
+- -- SQL to add a primary key to a table
+  ALTER TABLE <table name>
+  ADD PRIMARY KEY (<column name>);
+
+- -- SQL to remove a primary key from a table
+  ALTER TABLE <table name>
+  DROP PRIMARY KEY;
