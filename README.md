@@ -73,33 +73,35 @@ SELECT \* FROM test;
 ## Add and remove primary key
 
 - -- SQL to add a primary key to a table
-  ALTER TABLE <table name>
-  ADD PRIMARY KEY (<column name>);
+  ALTER TABLE [table name]
+  ADD PRIMARY KEY ([column name]);
 
 - -- SQL to remove a primary key from a table
-  ALTER TABLE <table name>
+  ALTER TABLE [table name]
   DROP PRIMARY KEY;
 
 ## Add and remove foreign key
 
 - -- How to add foreign key to a table
 
-ALTER TABLE <table name>
-ADD CONSTRAINT <constraint name>
-FOREIGN KEY (<column name>) REFERENCES <table name>(<column name>)
+ALTER TABLE [name]
+ADD "CONSTRAINT [constraint name]
+FOREIGN KEY ([column name]) REFERENCES [table name]([column name])
 
 - -- How to remove foreign key from a table
 
-ALTER TABLE <table name>
-DROP FOREIGN KEY <constraint name>,
-DROP INDEX <constraint name>;
+ALTER TABLE [table name]
+DROP FOREIGN KEY [constraint name],
+DROP INDEX [constraint name];
+
+## Add and remove unique constraint
 
 - -- How to create unique constraint to a column
 
-ALTER TABLE <table name>
-ADD CONSTRAINT <constraint name> UNIQUE (<column name>);
+ALTER TABLE [table name]
+ADD CONSTRAINT [constraint name] UNIQUE ([column name]);
 
 - --How to remove unique constraint from a column
 
-ALTER TABLE <table name>
-DROP INDEX <constraint name>;
+ALTER TABLE [table name]
+DROP INDEX [constraint name];
