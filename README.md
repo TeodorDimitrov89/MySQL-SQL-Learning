@@ -85,7 +85,7 @@ SELECT \* FROM test;
 - -- How to add foreign key to a table
 
 ALTER TABLE [name]
-ADD "CONSTRAINT [constraint name]
+ADD CONSTRAINT [constraint name]
 FOREIGN KEY ([column name]) REFERENCES [table name]([column name])
 
 - -- How to remove foreign key from a table
@@ -105,3 +105,25 @@ ADD CONSTRAINT [constraint name] UNIQUE ([column name]);
 
 ALTER TABLE [table name]
 DROP INDEX [constraint name];
+
+## Change column's name
+
+- -- How to change column's name
+
+ALTER TABLE [table name]
+
+- --CHANGE COLUMN [current column name] [new column name] [data type];
+
+ALTER TABLE [table name]
+
+- -- RENAME COLUMN [current column name] TO [new column name];
+
+## Change column's data type
+
+- -- How to change column's data type
+
+ALTER TABLE [table name]
+CHANGE COLUMN [current column name] [new column name] [data type];
+
+ALTER TABLE [table name]
+MODIFY COLUMN [column name] [data type];
