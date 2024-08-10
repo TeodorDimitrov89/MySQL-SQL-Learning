@@ -127,3 +127,15 @@ CHANGE COLUMN [current column name] [new column name] [data type];
 
 ALTER TABLE [table name]
 MODIFY COLUMN [column name] [data type];
+
+## Insert data into tables
+
+- INSERT INTO [table_name] ([column1],[column2],[column3],....[column_n])
+- VALUES (value1, value2, value3, ....value_n);
+
+### Example:
+
+INSERT INTO products (name, price, coffee_origin)
+VALUES ('Macchiato', 3.00, 'Brazil'), ('Cappuccino', 4.50, 'Costa Rica');
+
+## Update Data in Tables
